@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Vanity Phone Generator</title>
+    <style type="text/css">
+      .error {color: red}
+    </style>
+  </head>
+
+  <body>
+    <h2>Please enter a 10 digit phone number:</h2>
+    <form method="post">
+      <input type="text" name="number" value="{{number}}">
+      <input type="submit">
+      <div class='error'>{{error_length}}</div>
+      <div class='error'>{{error_chars}}</div>
+      <div class='error'>{{error_digits}}</div>
+      <div>{{result}}
+    </form>
+  </body>
+
+</html>
